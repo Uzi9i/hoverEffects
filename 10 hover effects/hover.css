@@ -1,0 +1,189 @@
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    height: 100vh;
+    padding: 2rem;
+    font-family: "DM Sans", sans-serif ;
+    font-weight: 1000;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.btn{
+    margin:1rem;
+    font-family:"DM Sans", sans-serif, monospace;
+    font-weight:1000;
+}
+/* hover effect styling for btn-1 */
+.btn-1 {
+    grid-column: 1;
+    width: 10rem;
+    height: 4rem;
+    border: 2px solid lightblue;
+    border-radius: 49px;
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s;
+    
+
+}
+
+.btn-1:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.btn-1::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: lightblue;
+    border-radius: 39px 0 0 39px;
+    transition: .5s;
+}
+
+.btn-1:hover::before {
+    width: 100%;
+    border-radius: 39px 39px 39px 39px;
+
+
+}
+
+/* btn-2 styling */
+.btn-2 {
+    grid-column: 2;
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    border-radius: 49px;
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    transition: color 0.4s;
+    opacity:1;
+    
+
+}
+.btn-2::before{
+    content:"";
+    border:1px solid lightcoral;
+    border-radius:49px;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index:-2;
+    transition:.5s;
+    
+
+}
+.btn-2:hover{
+    cursor:pointer;
+}
+.btn-2:hover::before{
+    transform:translate(10px,-5px);
+}
+
+.btn-2::after{
+    content:"";
+    border:1px solid lightcoral;
+    border-radius:49px;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition:.5s;
+    
+
+}
+.btn-2:hover::after{
+    transform:translate(-10px,5px);
+    
+}
+
+/* btn-3  */
+.btn-3 {
+    grid-column: 3;
+    width: 10rem;
+    height: 4rem;
+    border: 2px solid rgb(243, 19, 56);
+    background-color:transparent;
+    border-radius: 49px;
+    -webkit-filter:blur(.03rem);
+    color: #fff;
+    position: relative;
+    transition: color 0.4s;
+    box-shadow:0px 0px 4px rgb(243, 19, 56) ;
+}
+.btn-3:hover{
+    -webkit-filter:blur(0rem);
+    cursor:pointer;
+}
+.btn-3::before{
+    content:"";
+    position:absolute;
+    width:30%;
+    height:100%;
+    box-shadow:0px 0px 40px rgb(243, 19, 56);
+    top:0;
+    left:55px;
+    -webkit-filter:blur(5px);
+    background-color:rgb(243, 19, 56);
+    z-index:-1;
+    transition:0.5s;
+}
+.btn-3:hover::before{
+    width:100%;
+    left:0px;
+    border-radius:20px;
+    box-shadow:0px 0px 40px rgb(243, 19, 56);
+    
+
+}
+
+/* button  3 css ends here */
+
+/* button 4 css starts here */
+
+  .btn-4{
+    font-family: monospace;
+    width: 10rem;
+    height: 4rem;
+    font-size:1.2rem; 
+    padding:1rem 2rem;
+    cursor:pointer;
+    background-color:#000;
+    color:#1eff00b9;
+    
+    
+    border:2px dotted rgb(7, 226, 44);
+    border-radius:36px;
+    transition: border-radius 0.7s;
+
+  }
+  .btn-4:hover{
+    border-radius:10px;
+  }
+  
+
+/* button 4 css ends here */
