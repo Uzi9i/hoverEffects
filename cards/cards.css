@@ -3,7 +3,6 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    overflow:hidden;
 }
 
 body {
@@ -16,6 +15,7 @@ body {
     align-items:center;
     background: radial-gradient(circle, rgb(26, 26, 26) 0%, rgb(10, 10, 10) 56%);
     padding:0 10rem 0;
+    overflow:hidden;
 }
 
 
